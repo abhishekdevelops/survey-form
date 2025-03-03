@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Travel Bucket List Survey</title>
+    <link rel="sytlesheet" href="styles.css">
+    
+  </head>
+<body>
+
+  <h1 id="title">Travel Bucket List Survey</h1>
+<p id="description">Share your dream travel destinations,activities and preferences!</p>
+<form id="survey-form">
+<label id="name-label" for="name">Name:</label>
+<input type="text" name="name" id="name" placeholder="Enter your name" required>
+<label id="email-label" for="email">Email:</label>
+<input type="email" name="email" id="email" placeholder="Enter your email" required>
+<label id="number-label" for="number">Age:</label>
+<input type="number" min="18" max="100" name="number" id="number" placeholder="Enter your age" required>
+<label for="dropdown">Preferred Travel Destination:</label> 
+<select id="dropdown" name="destination" required>
+<option value="">Select A Destination:</option>
+<option value="beaches">Beaches</option>
+<option value="mountains">Mountains</option>
+<option value="cities">Cities</option>
+<option value="historial-sites">Historical Sites</option>
+</select>
+
+<label>Travel Companion Preference:</label>
+<label for="solo">Solo</label>
+<input type="radio" id="solo" name="companion" value="solo" required>
+<label for="family">With Family</label>
+<input type="radio" id="family" name="companion" value="family" required>
+
+<label>What activities would you liek to do?</label>
+<label for="hiking">Hiking</label>
+<input type="checkbox" id="hiking" name="activities" value="hiking">
+<label for="sighseeing">Sightseeing</label>
+<input type="checkbox" id="sightseeing" name="activities" value="sightseeing">
+<label for="foodtours">Food Tours</label>
+<input type="checkbox" id="foodtours" name="activities" value="foodtours">
+
+<label for="comments">Additional Comments</label>
+<textarea id="comments" name="comments" rows="4" placeholder="Any additional thoughts or destinations?"></textarea>
+
+<button id="submit" type="submit">Submit</button>
+</form>
+</body>
+</html>
